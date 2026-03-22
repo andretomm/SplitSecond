@@ -3,7 +3,7 @@ services:
     name: splitsecond
     env: node
     plan: starter
-    buildCommand: npm install --production=false && npm run build
+    buildCommand: NODE_ENV=development npm install --production=false && npm run build
     startCommand: npm start
     autoDeploy: true
     envVars:
